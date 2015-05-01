@@ -17,14 +17,13 @@
 		        <ul class="nav navbar-nav">
 		            <li class=""><a href="/placeholder1">placeholder1</a></li>
 		        </ul>
-		        <ul class="nav navbar-nav">
-					<li class=""><a href="/placeholder2">placeholder2</a></li>
+		        <ul class="nav navbar-nav navbar-right">
+					<li class=""><a href="/preferences"><i class="fa fa-cog"></i></a></li>
 		        </ul>
 		        <ul class="nav navbar-nav">
-<!--  				{{#if currentUser}} -->
-					<li class=""><a href="new_list">New List</a></li>
-<!-- 					<li class="{{activeRouteClass 'new_list'}}"><a href="{{pathFor 'listNew'}}" class="listNew">New List</a></li> -->
-				<!-- {{/if}} -->
+ 				{{#if currentUser}}
+					<li class="{{activeRouteClass 'new_list'}}"><a href="{{pathFor 'listNew'}}" class="listNew">New List</a></li>
+				{{/if}}
 
 		        </ul>
 			</div>

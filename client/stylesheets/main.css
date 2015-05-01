@@ -6,10 +6,12 @@ body {
 .clear{
 	clear: both;
 }
+.fa{
+	font-size: 18px;
+}
 
 
 /*header, navigation bar, log-in*/
-
 header 	ul {
     list-style-type: none;
 }
@@ -70,8 +72,4 @@ header li{
 	border:1px solid #999;
 	float:left;
 	border-radius: 0px
-}
-
-button .fa{
-	font-size: 18px;
 }

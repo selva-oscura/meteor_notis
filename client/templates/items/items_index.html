@@ -1,5 +1,9 @@
 <template name="basicItem">
 	<ul>
-		<li><strong>{{headline}}</strong> -- {{details}}</li>
+		<li><strong>{{headline}}</strong>
+			{{#if details}}
+				-- {{details}}
+			{{/if}}
+			</li>
 	</ul>
 </template>
