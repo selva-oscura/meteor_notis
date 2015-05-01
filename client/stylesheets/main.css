@@ -11,14 +11,6 @@ header li{
 	list-style-type:none;
 }
 
-.navbar { 
-/*	margin-bottom: 10px */
-}
-
-.navbar .navbar-inner {
-/*	border-radius: 0px 0px 3px 3px;*/
-}
-
 .container > .navbar-header{
 	height:50px;
 	overflow: hidden;
@@ -28,17 +20,20 @@ header li{
 	left: -206px;
 }
 
-.container {
-/*	width: 1170px;
-	max-width: 100%;*/
-}
-
 .main {
-	background: #fff;
-	border-radius: 3px;
+	border-radius: 1px;
 	padding: 10px;
 	margin-bottom: 10px;
-	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+	box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.01);
+}
+
+.main .btn{
+	margin-top:-6px;
+}
+
+.line{
+	min-height: 24px;
+	padding-top: 12px;
 }
 
 #login-buttons{
@@ -48,3 +43,13 @@ header li{
 #login-buttons a{
 	text-decoration: none;
 }
+
+.create_update input, .create_update select{
+	width:240px;
+	height:32px;
+}
+
+.create_update input[type="submit"]{
+	border:1px solid #999;
+}
+

@@ -1,16 +1,16 @@
 <template name="listNew">
-	<form>
+	<form class="create_update">
 		<div class="form-group">
 			<label class="control-label" for="name">Name Your List</label>
 			<div class="controls">
-				<input name="name" type="text" value="" placeholder="i.e. project checklist, groceries, meetings">
+				<input name="name" type="text" value="" placeholder="project checklist, meetings, groceries">
 			</div>
 		</div>
 		<div class="form-group">
 			<label class="control-label" for="type">List's Type</label>
 			<div class="controls">
 				<select name="type">
-					<option value="" selected disabled></option>
+					<option value="" selected disabled> -- select an option -- </option>
 					<option value="basic">basic</option>
 					<option value="ordered">orderable</option>
 					<option value="dated">dates/times</option>
@@ -18,6 +18,7 @@
 			</div>
 		</div>
 		<div class="form-group">
+			<label class="control-label" for="type"></label>
 			<div class="controls">
 				<input type="submit" value="Submit" class="btn" />
 			</div>

@@ -1,3 +1,15 @@
 <template name="listsIndex">
-	List of lists will go here
+	<h2>My Lists</h2>
+	{{#each lists}}
+		{{> list}}
+	{{/each}}
+</template>
+
+
+<template name="list">
+	<h4 class="main">
+		<a href="{{_id}}">{{name}}</a>
+		<button class="pull-right delete btn btn-danger"><i class="fa fa-times"></i> </button>
+		<button class="pull-right btn edit"><i class="fa fa-pencil"></i> </button>
+	</h4>
 </template>

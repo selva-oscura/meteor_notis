@@ -1,7 +1,5 @@
 Template.listsIndex.helpers({
-
-});
-
-Template.listsIndex.events({
-	
+	lists: function(){
+		return Lists.find({}, {sort: {submitted: 1}});
+	}
 });
