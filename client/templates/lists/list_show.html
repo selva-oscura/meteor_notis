@@ -1,7 +1,6 @@
 <template name="listShow">
-	<!-- <p>list name should go here</p> -->
-<!-- 	{{name}} -->
 	<h3>{{name}}</h3>
+	{{> itemNew}}
 	{{#each items}}
 		{{> basicItem}}
 	{{/each}}

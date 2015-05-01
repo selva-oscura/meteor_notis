@@ -1,55 +1,77 @@
+/*Entire app*/
 body {
 	background: #eeeeee;
 	color: #666666;
 }
+.clear{
+	clear: both;
+}
+
+
+/*header, navigation bar, log-in*/
 
 header 	ul {
     list-style-type: none;
 }
-
 header li{
 	list-style-type:none;
 }
-
 .container > .navbar-header{
 	height:50px;
 	overflow: hidden;
 }
-
+#login-buttons{
+	padding:15px;
+}
+#login-buttons a{
+	text-decoration: none;
+}
 .dropdown-menu{
 	left: -206px;
 }
 
+/*main body of page*/
 .main {
 	border-radius: 1px;
-	padding: 10px;
-	margin-bottom: 10px;
+	padding: 6px;
+	margin-bottom: 6px;
 	box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.01);
 }
-
 .main .btn{
-	margin-top:-6px;
+	margin:-6px 0px 0px 6px;
 }
 
-.line{
-	min-height: 24px;
-	padding-top: 12px;
-}
 
-#login-buttons{
-	padding:15px;
+/*forms*/
+.create_update .form-group{
+	width:300px;
+	float:left;
 }
-
-#login-buttons a{
-	text-decoration: none;
+.create_update input, .create_update select, .create_update #form-group-submit{	
+	height:30px;
 }
-
+.create_update #form-group-submit{
+	width:180px;
+}
+.create_update label{
+	width:56px;
+	float:left;
+	display: block;
+	text-align: right;
+	padding:4px 4px 0px 4px;
+}
 .create_update input, .create_update select{
 	width:240px;
-	height:32px;
+	float:left;
+	padding:0px 2px;
 }
-
 .create_update input[type="submit"]{
+	width:120px;
 	border:1px solid #999;
+	float:left;
+	border-radius: 0px
 }
 
+button .fa{
+	font-size: 18px;
+}
