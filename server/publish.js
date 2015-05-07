@@ -20,7 +20,7 @@ Meteor.publish('items', function(listId){
 	return Items.find({$and: [{ownerId: this.userId}, {listId: listId}]});
 });
 
-Meteor.publish('singleItem', function(id){
+Meteor.publish('singleItem', function(id){mete
 	//deprecated after own user accounts and restricting access to only the owner of the list/items
 	// return Items.findOne({_id: id});
 	// end deprecated inre user accounts
@@ -41,4 +41,18 @@ Meteor.publish('listAndItems', function(id){
 	}else{
 		return [];
 	}
+});
+
+// Meteor.publish('userInfo', function(){
+// 	var user = Users.findOne({_id: this.userId});
+// 	return user.preferences;
+// })
+
+Meteor.publish('preferences', function(){
+	// deprecated after own user accounts and restricting access to only the owner of the list/items
+	// return Lists.find();
+	// end deprecated inre user accounts
+	return Preferences.find();
+	// return Preferences.find({ownerId: this.userId});
+	// return Preferences.find();
 });

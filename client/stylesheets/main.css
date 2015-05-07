@@ -1,13 +1,29 @@
 /*Entire app*/
 body {
+	box-sizing: border-box;
 	background: #eeeeee;
 	color: #666666;
 }
 .clear{
 	clear: both;
 }
+
+.wholeEnchilada{
+	min-height:100vh;
+}
+
 .fa{
 	font-size: 18px;
+}
+
+a{
+	color:#777777;
+}
+
+a:hover{
+	color: #555555;
+	text-shadow: 2px 2px 4px rgba(0,0,0,.2);
+	text-decoration: none;
 }
 
 
@@ -72,4 +88,9 @@ header li{
 	border:1px solid #999;
 	float:left;
 	border-radius: 0px
+}
+
+/*items*/
+.items ul{
+    list-style-type: none;
 }

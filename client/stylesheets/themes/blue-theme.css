@@ -1,0 +1,78 @@
+.blue-theme .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+	color: #0D47A1;
+	background-color: #F7F6F6;
+	border-bottom: 1px solid #F7F6F6;
+}
+.blue-theme .navbar{
+	background-color: #3879D9;
+}
+.blue-theme .navbar a:hover{
+	color: #E1F5FE;
+	text-shadow: 2px 2px 4px #1C3265;
+}
+.blue-theme .navbar, .blue-theme .navbar p, .blue-theme .navbar h1, .blue-theme .navbar h2, .blue-theme .navbar h3, .blue-theme .navbar h4, .blue-theme .navbar h5, .blue-theme .navbar h6, .blue-theme .navbar a, .blue-theme .navbar-default .navbar-nav > li > a, .blue-theme .dropdown-toggle{
+	color: #F7F6F6;
+}
+.blue-theme #login-other-options a{
+	color: #0D47A1;
+}
+.blue-theme .navbar-brand:focus, .blue-theme .navbar-brand:hover{
+	color: #E1F5FE;
+}
+.blue-theme #login-other-options a:hover, .blue-theme #login-other-options a:visited{
+	color: #0D47A1;
+	text-shadow: 2px 2px 4px #E1F5FE;
+}
+
+.blue-theme .dropdown-menu{
+	color: #F7F6F6;
+	text-shadow: 2px 2px 4px #E1F5FE;
+}
+
+.blue-theme{
+	background-color: #E1F5FE;
+}
+
+.blue-theme p, .blue-theme h1, .blue-theme h2, .blue-theme h3, .blue-theme h4, .blue-theme h5, .blue-theme h6, .blue-theme a, .blue-theme a:visited, .blue-theme label, .blue-theme select, .blue-theme .items {
+	color: #0D47A1;
+}
+
+.blue-theme a:hover{
+	color: #1565C0;
+	text-shadow: 2px 2px 4px #F7F6F6;
+}
+
+.blue-theme select{
+	border-color: #0D47A1;
+	background-color: #E1F5FE;
+	background: #E1F5FE;
+}
+
+.blue-theme .create_update input, .blue-theme .create_update select, .blue-theme .create_update #form-group-submit input[type="submit"], .blue-theme .create_update select:focus, .blue-theme .create_update #form-group-submit input[type="submit"]:focus {
+	border: 1px solid #3879D9;
+	background-color: #E1F5FE;
+	background: #E1F5FE;
+	color: #0D47A1;
+}
+
+.blue-theme .create_update option:hover, .blue-theme .create_update option:focus{
+	background-color: #0D47A1;
+}
+
+.blue-theme .btn {
+	color: #E1F5FE;
+	background-color: #0D47A1;
+	border-color:#0D47A1;
+}
+
+.blue-theme .btn:hover {
+	background-color: #1565C0;
+}
+
+.blue-theme placeholder { color: #0D47A1; }
+.blue-theme input[placeholder] { color: #0D47A1; }
+.blue-theme input:moz-placeholder { color: #0D47A1; }
+.blue-theme :-moz-placeholder { color: #0D47A1; }
+.blue-theme ::-moz-placeholder { color: #0D47A1; }
+.blue-theme :-ms-input-placeholder { color: #0D47A1; }
+.blue-theme ::-webkit-input-placeholder { color: #0D47A1; }

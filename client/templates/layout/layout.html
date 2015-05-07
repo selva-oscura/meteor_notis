@@ -1,8 +1,27 @@
 <template name="layout">
-	{{> header}}
-	<div class="container">
-		<div id="content">
-			{{> yield}}
+	{{#if currentUser}}
+		<div class="{{theme}}">
+			<div class=" wholeEnchilada">
+				{{> header}}
+				<div class="container">
+					{{> errors}}
+					<div id="content">
+						{{> yield}}
+					</div>
+				</div>
+			</div>
 		</div>
-	</div>
+	{{else}}
+		<div class="default-theme">
+			<div class=" wholeEnchilada">
+				{{> header}}
+				<div class="container">
+					{{> errors}}
+					<div id="content">
+						{{> yield}}
+					</div>
+				</div>
+			</div>
+		</div>
+	{{/if}}
 </template>

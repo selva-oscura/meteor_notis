@@ -1,16 +1,17 @@
-<template name="listNew">
+<template name="listEdit">
+	<h4>Edit List</h4>
 	<form class="create_update">
 		<div class="form-group">
 			<label class="control-label" for="name">Name</label>
 			<div class="controls">
-				<input name="name" type="text" value="" placeholder="project checklist, meetings, groceries">
+				<input name="name" type="text" value="{{name}}">
 			</div>
 		</div>
 		<div class="form-group">
 			<label class="control-label" for="type">Type</label>
 			<div class="controls">
 				<select name="type">
-					<option value="" selected disabled> -- select an option -- </option>
+					<option value="" selected disabled> - - select an option - - </option>
 					<option value="basic">basic</option>
 					<option value="ordered">orderable</option>
 					<option value="dated">dates/times</option>
@@ -18,12 +19,11 @@
 			</div>
 		</div>
 		<div class="form-group" id="form-group-submit">
-			<label class="control-label" for="submit">&nbsp;</label>
+			<label class="control-label" for="type">&nbsp;</label>
 			<div class="controls">
-				<input type="submit" value="Create New List" class="btn" />
+				<input type="submit" value="Update List" class="btn" />
 			</div>
 		</div>
 	</form>
 	<div class="clear"></div>
-	{{> listsIndex}}
 </template>

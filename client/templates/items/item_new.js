@@ -8,8 +8,13 @@ Template.itemNew.events({
 		}
 		Meteor.call('itemCreate', item, function(error, result){
 			if(error){
+				// throw error on error
 				console.log(error.reason);
 				return throwError(error.reason);
+			}else{
+				// reset form on !error
+				$(e.target).find('[name=headline]').val('');
+				$(e.target).find('[name=details]').val('');
 			}
 		});
 	}

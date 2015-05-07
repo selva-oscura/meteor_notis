@@ -7,14 +7,11 @@ Template.listNew.events({
 		}
 		Meteor.call('listCreate', list, function(error, result){
 			if(error){
-				console.log(error.reason);
 				return throwError(error.reason);
+			}else{			
+				$(e.target).find('[name=name]').val('');
+				$(e.target).find('[name=type]').val('');
 			}
-			if(result.listExists){
-				console.log('listExists');
-				throwError('You already have a list with this name.');
-			}
-			// Router.go('listShow', {_id: result._id});
 		});
 	}
 });
